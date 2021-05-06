@@ -1,0 +1,95 @@
+@mixin fontz(){
+  h1 {
+    font-size: 40px;
+    line-height: 29px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding-bottom: 14px;
+    padding-left: 3px;
+  }
+  hr {
+    width: 87px;
+    height: 4px;
+    opacity: 0.14;
+    background-color: #000000;
+    align-items: center;
+    margin: 0 auto;
+  }
+  p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    padding-top: 18px;
+  }
+}
+.get_in_touch {
+  width: 100%;
+  background-color:#3c5499;
+  padding: 119px 0 57px 0;
+  text-align: center;
+  .get_in_touch_text {
+    @include fontz();
+    color: #ffffff;
+    text-align: center;
+  }
+  form {
+    margin: 74px auto 0 auto;
+    .name_form {
+      width: 414px;
+      height: 56px;
+      background-color: #273a71;
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 400;
+      color: #ffffff;
+      padding:0 0 0 25px;
+      margin: 0 14px 27px 14px;
+      border-radius: 5px;
+      &::placeholder {
+        color: #ffffff;
+      }
+    }
+    textarea {
+      width: 860px;
+      height: 200px;
+      background-color: #273a71;
+      font-size: 18px;
+      line-height: 18px;
+      font-weight: 400;
+      padding: 22px 0 0 25px;
+      border-radius: 5px;
+      color: #ffffff;
+      &::placeholder {
+        color: #ffffff;
+      }
+    }
+    .btm_form {
+      width: 293px;
+      height: 70px;
+      background-color: #30bae7;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: #ffffff;
+      border-radius: 3px;
+      border-bottom: 4px solid #289ec4;
+      padding: 3px 0 0 2px;
+      margin: 57px 0;
+
+    }
+  }
+}
+@media (max-width: 850px) {
+  .get_in_touch {
+    form {
+      .name_form {
+        width: 80%;
+      }
+      textarea {
+        width: 80%;
+      }
+    }
+  }
+}

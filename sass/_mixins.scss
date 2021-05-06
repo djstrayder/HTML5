@@ -1,0 +1,96 @@
+@mixin fontz{
+  h1 {
+    font-size: 40px;
+    line-height: 29px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    padding-bottom: 14px;
+    padding-left: 3px;
+  }
+  hr {
+    width: 87px;
+    height: 4px;
+    opacity: 0.14;
+    background-color: #000000;
+    align-items: center;
+    margin: 0 auto;
+  }
+  p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    padding-top: 18px;
+  }
+}
+@mixin green{
+  h3 {
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    padding-bottom: 14px;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+}
+@mixin team {
+  h3 {
+    font-size: 24px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #27283d;
+    padding: 39px 0 6px 3px;
+  }
+  h4 {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #30bae7;
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.02em;
+    color: #3c4761;
+    padding: 14px 0 0 0;
+  }
+}
+@mixin testimonials {
+  .text_i {
+    font-size: 21px;
+    line-height: 31px;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.7px;
+    color: #ffffff;
+    padding-bottom: 21px;
+    padding-top: 6px;
+  }
+  .text_name {
+    font-size: 24px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+  .text_p {
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    color: #ffdd99;
+  }
+}

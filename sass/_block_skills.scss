@@ -1,0 +1,35 @@
+@import "mixins";
+.skills {
+  width: 100%;
+  background-color: #fff;
+  padding: 116px 0 92px 0;
+  .skills_text {
+    text-align: center;
+    @include fontz();
+    color: #3c4761;
+    h1 {
+      margin-left: 3px;
+    }
+    p {
+      margin-top: 1px;
+      span {
+        margin-left: 5px;
+      }
+    }
+  }
+  .row {
+    padding: 68px 25px 0 25px;
+    .skills_col {
+      text-align: center;
+      .base_text {
+        font-size: 24px;
+        line-height: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        color: #3c4761;
+        padding: 31px 0 31px 0;
+      }
+    }
+  }
+}

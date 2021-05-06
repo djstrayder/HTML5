@@ -1,0 +1,43 @@
+@import "mixins";
+.green {
+  width: 100%;
+  background-color: #17c2a4;
+  padding-bottom: 112px;
+  padding-top: 119px;
+  .green_text {
+    text-align: center;
+    @include fontz;
+    color: #ffffff;
+    p {
+      padding-bottom: 66px;
+    }
+  }
+  .row {
+    padding: 0 27px 0 27px;
+    .green_col {
+      text-align: center;
+      @include green;
+      padding: 0 40px 0 40px;
+      .green_flag {
+        img {
+          margin: 1px 0 62px 8px;
+        }
+      }
+      .green_crayoun {
+        img {
+          margin: -4px -1px 59px 8px;
+        }
+      }
+      .green_grears {
+        img {
+          margin: 1px 0 59px -9px;
+        }
+      }
+      .green_rocket {
+        img {
+          margin: -3px 0 55px -2px;
+        }
+      }
+    }
+  }
+}

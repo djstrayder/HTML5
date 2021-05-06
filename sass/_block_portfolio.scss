@@ -1,0 +1,111 @@
+@import "mixins";
+.portfolio {
+  width: 100%;
+  background-color: #ffdd99;
+  padding: 120px 0 109px 0;
+  text-align: center;
+  .portfolio_text {
+    text-align: center;
+    @include fontz;
+    color: #3c4761;
+    h1 {
+      margin: 0 0 7px 3px;
+    }
+  }
+  .portfolio_categories {
+    text-align: center;
+    padding-top: 26px;
+    input {
+      height: 38px;
+      background-color: rgba(0,0,0,0.07);
+      font-size: 18px;
+      line-height: 19px;
+      font-weight: 400;
+      letter-spacing: 0.02em;
+      color: #393939;
+      margin: -1px 3px 0 4px;
+      &:active {
+        background-color: #ffffff;
+      }
+      &:hover {
+        background-color: #ffffff;
+      }
+      &:nth-child(1) {
+        width: 84px;
+      }
+      &:nth-child(2) {
+        width: 84px;
+      }
+      &:nth-child(3) {
+        width: 90px;
+      }
+      &:nth-child(4) {
+        width: 90px;
+      }
+    }
+  }
+  .row {
+    padding: 63px 0 81px 0;
+    .portfolio_col {
+      text-align: center;
+      &:nth-child(1) {
+        padding: 0 9px 0 35px;
+      }
+      &:nth-child(2) {
+        padding: 3px 33px 0 11px;
+      }
+      &:nth-child(3) {
+        padding: 62px 7px 0 37px;
+      }
+      &:nth-child(4) {
+        padding: 63px 32px 0 12px;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .notebook_text {
+        font-size: 18px;
+        line-height: 19px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 0.02em;
+        color: #393939;
+      }
+      .nt_t1 {
+        padding: 29px 0 0 4px;
+      }
+      .nt_t2 {
+        padding: 26px 6px 0 0;
+      }
+      .nt_t3 {
+        padding: 28px 22px 0 0;
+      }
+      .nt_t4 {
+        padding: 27px 0 0 14px;
+      }
+    }
+  }
+  .btm_pf {
+    width: 293px;
+    height: 70px;
+    background-color: #17c2a4;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    border-radius: 3px;
+    border-bottom: 4px solid #13a58b;
+    padding: 3px 0 0 5px;
+  }
+}
+@media (max-width: 850px) {
+  .portfolio {
+    input {
+      width: 50%;
+      height: 20%;
+      padding: 10px 10px 10px 10px;
+    }
+  }
+}

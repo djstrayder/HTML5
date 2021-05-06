@@ -1,0 +1,43 @@
+@import "mixins";
+.team {
+  width: 100%;
+  background-color: #e7f1f8;
+  padding: 119px 0 97px 0;
+  .team_text {
+    text-align: center;
+    @include fontz;
+    color: #3c4761;
+    p {
+      margin-top: 3px;
+    }
+  }
+  .row {
+    padding: 63px 25px 0 24px;
+    .team_col {
+      text-align: center;
+      @include team;
+      padding: 0 37px;
+      img {
+        border-radius: 50%;
+      }
+      .team_item4 {
+        h3 {
+          margin-left: 8px;
+        }
+        h4 {
+          margin: 0px -12px 0 0px;
+        }
+        p {
+          margin: 9px 0 12px 10px;
+        }
+      }
+      .team_social {
+        padding: 0 0 30px 0;
+        img {
+          margin: 15px 3.7px 0 5px;
+
+        }
+      }
+    }
+  }
+}
